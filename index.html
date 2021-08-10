@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'/>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css'/>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="./music-player.css">
+    <script src="./music-player.js" defer></script>
+    <meta name="author" content="Lester Howard">
+    <meta name="description" content="Play the music you get from array and do it previous and next as you like without any error">
+</head>
+<body>
+    
+    <div class="container">
+        <h1 class="container__title">Music <a class="container__link" href="https://www.linkedin.com/in/lesthoward" target="_blank">Player</a></h1>
+        <div class="music">
+            <div class="music__info">
+                <h4 class="music__name">summer</h4>
+                <span class="music__time">1:60</span>
+                <!-- .music__name -->
+                <div class="music__progressbar">
+                    <div class="music__progress"></div>
+                    <!-- .music__progress -->
+                </div>
+                <!-- .music__progressbar -->
+            </div>
+            <!-- .music__info -->
+
+            <div class="music__player">
+                <div class="music__imagewrapper">
+                    <img src="./images/summer.jpg" class="music__img">
+                </div>
+                <!-- .music__imagewrapper -->
+
+                <audio src="./music/summer.mp3" class="music__audio"></audio>
+                <!-- .music__audio -->
+
+                <div class="music__buttons">
+                    <button class="music__btn">
+                        <i class="music__prev fas fa-backward"></i>
+                    </button>
+                    <button class="music__btn">
+                        <i class="music__play fas fa-play"></i>
+                    </button>
+                    <button class="music__btn">
+                        <i class="music__next fas fa-forward"></i>
+                    </button>
+                </div>
+                <!-- .music__buttonswrapper -->
+            </div>
+            <!-- .music__player -->
+        </div>
+    </div>
+
+</body>
+</html>
